@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="600aaa87-cc7a-4b2b-9751-4f1075ac8439" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\Maven\apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1glJzLGI68ZMzdcgRUobxdVR2fY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.heima.ui.Client" />
+      <module name="day01_eesy_02factory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.heima.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="600aaa87-cc7a-4b2b-9751-4f1075ac8439" name="Default Changelist" comment="" />
+      <created>1598683507848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598683507848</updated>
+      <workItem from="1598683509601" duration="3000" />
+      <workItem from="1598684404539" duration="816000" />
+      <workItem from="1598703773436" duration="4030000" />
+      <workItem from="1598746758233" duration="2086000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="482" y="85" key="#com.intellij.ide.util.MemberChooser" timestamp="1598704371962">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="482" y="85" key="#com.intellij.ide.util.MemberChooser/0.0.1366.740@0.0.1366.740" timestamp="1598704371962" />
+    <state x="456" y="125" key="FileChooserDialogImpl" timestamp="1598684464182">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="456" y="125" key="FileChooserDialogImpl/0.0.1366.740@0.0.1366.740" timestamp="1598684464182" />
+    <state width="1296" height="164" key="GridCell.Tab.0.bottom" timestamp="1598748896999">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1296" height="164" key="GridCell.Tab.0.bottom/0.0.1366.740@0.0.1366.740" timestamp="1598748896999" />
+    <state width="1296" height="164" key="GridCell.Tab.0.center" timestamp="1598748896999">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1296" height="164" key="GridCell.Tab.0.center/0.0.1366.740@0.0.1366.740" timestamp="1598748896999" />
+    <state width="1296" height="164" key="GridCell.Tab.0.left" timestamp="1598748896999">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1296" height="164" key="GridCell.Tab.0.left/0.0.1366.740@0.0.1366.740" timestamp="1598748896999" />
+    <state width="1296" height="164" key="GridCell.Tab.0.right" timestamp="1598748896999">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state width="1296" height="164" key="GridCell.Tab.0.right/0.0.1366.740@0.0.1366.740" timestamp="1598748896999" />
+    <state x="215" y="2" key="SettingsEditor" timestamp="1598684472392">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="215" y="2" key="SettingsEditor/0.0.1366.740@0.0.1366.740" timestamp="1598684472392" />
+    <state x="336" y="61" width="672" height="678" key="search.everywhere.popup" timestamp="1598747483217">
+      <screen x="0" y="0" width="1366" height="740" />
+    </state>
+    <state x="336" y="61" width="672" height="678" key="search.everywhere.popup/0.0.1366.740@0.0.1366.740" timestamp="1598747483217" />
+  </component>
+</project>

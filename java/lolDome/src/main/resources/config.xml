@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="art" class="org.example.xmlDemo.Art_01">
+        <constructor-arg index="0" value="浪客之道"></constructor-arg>
+        <constructor-arg index="1" value="斩钢闪"></constructor-arg>
+        <constructor-arg index="2" value="风之障壁"></constructor-arg>
+        <constructor-arg index="3" value="踏前斩"></constructor-arg>
+        <constructor-arg index="4" value="狂风绝息斩"></constructor-arg>
+    </bean>
+    <bean id="role" class="org.example.xmlDemo.Role_01">
+        <constructor-arg index="0" value="疾风剑豪"></constructor-arg>
+        <constructor-arg index="1" value="850"></constructor-arg>
+        <constructor-arg index="2" value="0"></constructor-arg>
+        <constructor-arg index="3" ref="art"></constructor-arg>
+    </bean>
+</beans>
