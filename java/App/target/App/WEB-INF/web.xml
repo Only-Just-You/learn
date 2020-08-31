@@ -8,8 +8,25 @@
     <servlet-name>MyServlet</servlet-name>
     <servlet-class>servlet.MyServlet</servlet-class>
   </servlet>
+  <servlet>
+    <servlet-name>MyServlet_02</servlet-name>
+    <servlet-class>servlet.MyServlet_02</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyServlet_03</servlet-name>
+    <servlet-class>servlet.MyServlet_03</servlet-class>
+  </servlet>
+  
   <servlet-mapping>
     <servlet-name>MyServlet</servlet-name>
-    <url-pattern>/hello</url-pattern>
+    <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet_02</servlet-name>
+    <url-pattern>/insert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyServlet_03</servlet-name>
+    <url-pattern>/select</url-pattern>
   </servlet-mapping>
 </web-app>

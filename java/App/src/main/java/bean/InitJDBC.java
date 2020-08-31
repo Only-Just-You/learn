@@ -10,7 +10,7 @@ import org.apache.commons.dbcp2.BasicDataSource;
 public class InitJDBC {
     private static String URL = "jdbc:mysql://localhost/app?serverTimezone=UTC";
     private static String USER = "root";
-    private static String PASSWORD = "123";
+    private static String PASSWORD = "200201";
     private static String ClassName = "com.mysql.cj.jdbc.Driver";
     private static BasicDataSource ds = null;
     public static BasicDataSource dbpoolInit(){

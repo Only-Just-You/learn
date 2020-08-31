@@ -29,6 +29,17 @@ public class SelectImpl {
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+        }finally {
+            try {
+                if (rs != null)
+                    rs.close();
+                if (pstm != null)
+                    pstm.close();
+                if(conn != null)
+                    conn.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
