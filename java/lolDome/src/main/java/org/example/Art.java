@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Art {
+public class Art implements Action{
     @Value("浪客之道")
     private String passive;
     @Value("斩钢闪")
@@ -25,5 +25,11 @@ public class Art {
                 ", ThreeArt='" + ThreeArt + '\'' +
                 ", FourArt='" + FourArt + '\'' +
                 '}';
+    }
+
+    @Override
+    public String attack() {
+        int random = (int)(Math.random()*100);
+        return "进行了攻击造成了 " + random + " 伤害！";
     }
 }

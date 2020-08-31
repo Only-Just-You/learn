@@ -21,7 +21,8 @@ public class Role {
                 "name='" + name + '\'' +
                 ", blood=" + blood +
                 ", blue_scale=" + blue_scale +
-                ", art=" + art.toString() +
-                '}';
+                ", art=" + art.toString()  +
+                '}' + "\n" +
+                name + art.attack();
     }
 }
