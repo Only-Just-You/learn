@@ -1,6 +1,8 @@
 package servlet;
 
-import bean.InsertImpl;
+import bean.InsertSpring;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +15,6 @@ public class MyServlet_02 extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        super.doGet(req, resp);
         doPost(req, resp);
-        //        InsertImpl insert = new InsertImpl();
 //        insert.insert("user", "name,sex,iphone", "'zhangsan','nan','173627489'");
     }
 
@@ -25,7 +26,10 @@ public class MyServlet_02 extends HttpServlet {
         String insertagrs = req.getParameter("args_02");
         String values = req.getParameter("args_03");
 
-        InsertImpl insert = new InsertImpl();
-        insert.insert(tableName, insertagrs, values);
+
+//        insert.insert(tableName, insertagrs, values);
+        ApplicationContext context = new ClassPathXmlApplicationContext("DBCPConfig.xml");
+        InsertSpring insertSpring = context.getBean(InsertSpring.class);
+        insertSpring.insert(tableName, insertagrs, values);
     }
 }

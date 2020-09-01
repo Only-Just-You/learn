@@ -1,8 +1,8 @@
 package servlet;
 
-import bean.InsertImpl;
-import bean.SelectImpl;
-import bean.UpdataImpl;
+import bean.UpdateSpring;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,12 +20,10 @@ public class MyServlet extends HttpServlet {
         String newValue = req.getParameter("args_03");
         String whereagrs = req.getParameter("args_04");
         String value = req.getParameter("args_05");
-//        SelectImpl select = new SelectImpl();
+
 //        select.selectImpl("*","user",null);
 //        System.out.println("servlet 已加载");
-//        InsertImpl insert = new InsertImpl();
 //        insert.insert("user", "name,sex,iphone", "'zhangsan','nan','173627489'");
-//        UpdataImpl updata = new UpdataImpl();
 //        updata.updataImpl("user", "name", "'张er'", "id", "2" );
     }
 
@@ -37,7 +35,9 @@ public class MyServlet extends HttpServlet {
         String newValue = req.getParameter("args_03");
         String whereagrs = req.getParameter("args_04");
         String value = req.getParameter("args_05");
-        UpdataImpl updata = new UpdataImpl();
-        updata.updataImpl(tableName, args, newValue, whereagrs, value);
+//        updata.updataImpl(tableName, args, newValue, whereagrs, value);
+        ApplicationContext context = new ClassPathXmlApplicationContext("DBCPConfig.xml");
+        UpdateSpring updateSpring = context.getBean(UpdateSpring.class);
+        updateSpring.updataImpl(tableName, args, newValue, whereagrs, value);
     }
 }
