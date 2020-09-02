@@ -11,10 +11,16 @@
             <value>jdbc:mysql://localhost/app?serverTimezone=UTC</value>
         </property>
         <property name="username">
-            <value>root</value>
+            <value>app</value>
         </property>
         <property name="password">
-            <value>123</value>
+            <value>200201</value>
+        </property>
+        <property name="maxTotal">
+            <value>10</value>
+        </property>
+        <property name="minIdle">
+            <value>2</value>
         </property>
     </bean>
     <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">

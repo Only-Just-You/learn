@@ -1,0 +1,21 @@
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%d{MM-dd HH:mm:ss}][%p][%logger{0}:%line] - %m %n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="logFile" class="ch.qos.logback.core.FileAppender">
+        <file>E:/logFile.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>[%d{MM-dd HH:mm:ss}][%p][%logger{0}:%line] - %m %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="info">
+        <appender-ref ref="stdout" />
+        <appender-ref ref="logFile"></appender-ref>
+    </root>
+</configuration>

@@ -8,9 +8,6 @@ import java.util.List;
 
 public class SelectSpring {
     JdbcTemplate jdbcTemplate;
-    public JdbcTemplate getJdbcTemplate(){
-        return jdbcTemplate;
-    }
     public void setJdbcTemplate(JdbcTemplate jdbcTemplate){
         this.jdbcTemplate = jdbcTemplate;
     }

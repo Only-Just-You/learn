@@ -9,5 +9,8 @@
         <module name="lolDome" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lolDome" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

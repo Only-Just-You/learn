@@ -2,11 +2,16 @@ package org.aop;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
 public class PerformAOP {
+    @Autowired
+    private LogInterceptor log;
     @Before("execution(* org.aop.Performance.perform(..))")
     public void takeseat(){
         System.out.println("slient iphone");
@@ -16,7 +21,8 @@ public class PerformAOP {
     }
     @After("performance()")
     public void appland(){
-        System.out.println("结束！！！");
+//        System.out.println("结束！！！");
+        log.after();
     }
 
     /**
@@ -31,6 +37,7 @@ public class PerformAOP {
             System.out.println("鼓掌！！！");        //若发生异常，processd()以下的方法不实现
         } catch (Throwable throwable) {
             System.out.println("表演失败，遭到了唾弃！！！");
+            log.afterError();
         }
 
     }
