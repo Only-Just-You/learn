@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.dao.UserDAO">
+    <select id="findUser" resultType="user">
+        select * from user_list
+<!--        <if test="username != null">-->
+<!--            where username = #{username}-->
+<!--        </if>-->
+
+<!--        <choose>-->
+<!--            <when test="username != null">-->
+<!--                where username = #{username}-->
+<!--            </when>-->
+<!--            <when test="password">-->
+<!--                and password = #{password}-->
+<!--            </when>-->
+<!--            <otherwise></otherwise>-->
+<!--        </choose>-->
+
+        <where>
+            <if test="username != null">
+                username = #{username}
+            </if>
+            <if test="password != null">
+                and password = #{password}
+            </if>
+        </where>
+    </select>
+
+    <select id="findAllUser" parameterType="user" resultType="user">
+        select * from user_list
+        where id in
+        <foreach collection="list" item="item" index="index" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+    </select>
+
+    <select id="findUserByName"  resultType="user">
+        select * from user_list where username = #{username}
+    </select>
+
+    <insert id="insertUser" parameterType="user" useGeneratedKeys="true" keyProperty="id">
+        insert into user_list(username, password) values (#{username}, #{password})
+    </insert>
+
+    <update id="updateUserByName" parameterType="user">
+        update user_list
+<!--         set password = #{password} where username = #{username}-->
+        <set>
+            <if test="username != null">username = #{username},</if>
+            <if test="password != null">password = #{password}</if>
+        </set>
+        where username = #{username}
+    </update>
+
+    <delete id="deleteUserByName" parameterType="user">
+        delete from user_list where username = #{username}
+    </delete>
+
+    <resultMap id="selectUserResultMap" type="userTest">
+        <constructor>
+            <idArg column="user_id" javaType="int"></idArg>
+        </constructor>
+        <result property="username" column="UserName"></result>
+        <result property="tel" column="Tel"/>
+        <association property="transaction" javaType="transaction">
+            <constructor>
+                <idArg column="t_id" javaType="int"></idArg>
+            </constructor>
+            <result property="userid" column="UserId"/>
+            <result property="productid" column="ProductId"/>
+        </association>
+    </resultMap>
+    
+    <select id="getUserTest" resultMap="selectUserResultMap">
+        select
+            U.ID as user_id,
+            U.UserName as username,
+            U.Tel as tel,
+            T.ID as t_id,
+            T.UserId as userid,
+            T.ProductId as productid
+        from user U
+            left join transaction T on U.ID = T.UserID
+        where U.ID = #{id}
+    </select>
+
+    <resultMap id="selectUserIdResultMap" type="user">
+        <constructor>
+            <idArg column="user_id" javaType="int"/>
+        </constructor>
+        <result property="userName" column="UserName"/>
+        <result property="tel" column="Tel"/>
+        <association property="products" javaType="product">
+            <constructor>
+                <idArg column="product_id" javaType="int"/>
+            </constructor>
+            <result property="productname" column="ProductName"/>
+            <result property="catalog" column="Catalog"/>
+        </association>
+    </resultMap>
+
+    <select id="getUserId" resultMap="selectUserIdResultMap">
+        select
+            U.ID as user_id,
+            username,
+            tel,
+            P.ID as p_id,
+            productname,
+            catalog
+        from user U
+            left join transaction T on U.ID = T.ID
+            left join product P on T.ProductId = P.ID
+        where U.ID = #{id}
+    </select>
+</mapper>

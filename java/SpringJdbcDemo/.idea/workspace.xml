@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab463fe-6eba-4479-ada4-0c013c1751e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/cn/MoviePerformerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/cn/MoviePerformerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformerDAOImpl$MoviePerformerRowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformerDAOImpl$MoviePerformerRowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/cn/MoviePerformerDAOImpl.class" afterDir="false" />
-    </list>
+    <list default="true" id="2ab463fe-6eba-4479-ada4-0c013c1751e9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -164,6 +152,7 @@
       <workItem from="1600006331555" duration="2132000" />
       <workItem from="1600045119540" duration="963000" />
       <workItem from="1600047419938" duration="619000" />
+      <workItem from="1601104160775" duration="34000" />
     </task>
     <servers />
   </component>
