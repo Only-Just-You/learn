@@ -1,12 +1,10 @@
 package cn.pojo;
 
-import java.util.List;
-
 public class User {
     private Integer userId;
     private String userName;
     private String tel;
-    private List<Product> products;
+    private Product products;
 
     public User(Integer userId) {
         this.userId = userId;
@@ -36,11 +34,11 @@ public class User {
         this.tel = tel;
     }
 
-    public List<Product> getProducts() {
+    public Product getProducts() {
         return products;
     }
 
-    public void setProducts(List<Product> products) {
+    public void setProducts(Product products) {
         this.products = products;
     }
 
@@ -50,7 +48,7 @@ public class User {
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
                 ", tel='" + tel + '\'' +
-                ", products=" + products.toString() +
+                ", product=" + products.toString() +
                 '}';
     }
 

@@ -1,5 +1,6 @@
 import cn.dao.UserDAO;
 import cn.dao.impl.UserDAOImpl;
+import cn.pojo.Product;
 import cn.pojo.User;
 import cn.pojo.UserTest;
 
@@ -28,6 +29,11 @@ public class TestUser {
 //        User user = userDAO.findUserByName("asd");
         User user = userDAO.getUserId(1);
         System.out.println(user.toString());
+    }
+    public static void findProduct(){
+        UserDAO userDAO = new UserDAOImpl();
+        Product product = userDAO.getProduct(20);
+        System.out.println(product.toString());
     }
 //    public static void insertUser(){
 //        UserDAO userDAO = new UserDAOImpl();
@@ -62,6 +68,7 @@ public class TestUser {
 //        findAllUser();
 //        updateUserByName();
 //        deleteUserByName();
-        findUser();
+//        findUser();
+        findProduct();
     }
 }

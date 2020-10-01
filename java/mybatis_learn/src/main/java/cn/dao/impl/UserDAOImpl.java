@@ -1,6 +1,7 @@
 package cn.dao.impl;
 
 import cn.dao.UserDAO;
+import cn.pojo.Product;
 import cn.pojo.User;
 import cn.pojo.UserTest;
 import cn.utils.MyBatisUtil;
@@ -169,6 +170,22 @@ public class UserDAOImpl implements UserDAO {
             UserDAO mapper = session.getMapper(UserDAO.class);
             User user = mapper.getUserId(1);
             return user;
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            MyBatisUtil.closeSession();
+        }
+        return null;
+    }
+
+    @Override
+    public Product getProduct(int id) {
+        SqlSession session = null;
+        try {
+            session = MyBatisUtil.getSession();
+            UserDAO mapper = session.getMapper(UserDAO.class);
+            Product product = mapper.getProduct(id);
+            return product;
         }catch (Exception e){
             e.printStackTrace();
         }finally {

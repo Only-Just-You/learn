@@ -3,10 +3,16 @@ package cn.pojo;
 public class Product {
     private Integer pid;
     private String productname;
-    private String catelog;
+    private String catalog;
 
     public Product(Integer pid) {
         this.pid = pid;
+    }
+
+    public Product(Integer pid, String productname, String catalog) {
+        this.pid = pid;
+        this.productname = productname;
+        this.catalog = catalog;
     }
 
     public Integer getPid() {
@@ -25,12 +31,12 @@ public class Product {
         this.productname = productname;
     }
 
-    public String getCatelog() {
-        return catelog;
+    public String getcatalog() {
+        return catalog;
     }
 
-    public void setCatelog(String catelog) {
-        this.catelog = catelog;
+    public void setcatalog(String catalog) {
+        this.catalog = catalog;
     }
 
     @Override
@@ -38,7 +44,7 @@ public class Product {
         return "Product{" +
                 "pid=" + pid +
                 ", productname='" + productname + '\'' +
-                ", catelog='" + catelog + '\'' +
+                ", catalog='" + catalog + '\'' +
                 '}';
     }
 }

@@ -107,12 +107,29 @@
             U.ID as user_id,
             username,
             tel,
-            P.ID as p_id,
+            P.ID as product_id,
             productname,
             catalog
         from user U
-            left join transaction T on U.ID = T.ID
+            left join transaction T on U.ID = T.UserId
             left join product P on T.ProductId = P.ID
         where U.ID = #{id}
+    </select>
+
+    <resultMap id="selectProductResultMap" type="product">
+        <constructor>
+            <idArg column="product_id" javaType="int"></idArg>
+        </constructor>
+        <result property="productname" column="ProductName"/>
+        <result property="catalog" column="Catalog"/>
+    </resultMap>
+
+    <select id="getProduct" resultMap="selectProductResultMap">
+        select
+            ID as product_id,
+            productname,
+            catalog
+        from product
+            where ID = #{id}
     </select>
 </mapper>

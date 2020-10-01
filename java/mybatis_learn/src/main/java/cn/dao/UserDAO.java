@@ -1,5 +1,6 @@
 package cn.dao;
 
+import cn.pojo.Product;
 import cn.pojo.User;
 import cn.pojo.UserTest;
 import org.apache.ibatis.annotations.Select;
@@ -18,4 +19,5 @@ public interface UserDAO {
 
     UserTest getUserTest(int id);
     User getUserId(int id);
+    Product getProduct(int id);
 }
