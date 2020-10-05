@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57f1eeb8-483c-4453-8cce-fa9010e020bd" name="Default Changelist" comment="" />
+    <list default="true" id="57f1eeb8-483c-4453-8cce-fa9010e020bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../App_02/.idea/App_02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../App_02/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App_02/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../App_02/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SpringJdbcDemo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringJdbcDemo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01_eesy_01jdbc/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_eesy_01jdbc/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01_eesy_04bean/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_eesy_04bean/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day01_eesy_04bean/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day01_eesy_04bean/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lolDome/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lolDome/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +26,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -25,12 +37,14 @@
     </option>
   </component>
   <component name="ProjectId" id="1gnShXfNwoKSZg0Gl0FLlifWiAq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -50,19 +64,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="day01_eesy_03spring []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings">
@@ -77,6 +78,7 @@
             <option name="pluginUpdatePolicy" value="DEFAULT" />
             <option name="printErrorStackTraces" value="false" />
             <option name="threads" />
+            <option name="updateIndicesOnProjectOpen" value="true" />
             <option name="usePluginRegistry" value="false" />
             <option name="userSettingsFile" value="C:\Users\Administrator\.m2\settings.xml" />
             <option name="workOffline" value="false" />
@@ -112,7 +114,10 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="57f1eeb8-483c-4453-8cce-fa9010e020bd" name="Default Changelist" comment="" />
@@ -123,11 +128,12 @@
       <workItem from="1598748985006" duration="3000" />
       <workItem from="1598750209126" duration="2530000" />
       <workItem from="1598781153245" duration="1755000" />
+      <workItem from="1601896313094" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="132" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598750327248">
