@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这里如果不具体会出现Invalid bound statement (not found): com.example.springbootdemo.dao.UserMapper.getUsername的错误-->
+<mapper namespace="com.example.springbootdemo.dao.UserMapper">
+    <select id="getUsername" parameterType="Integer" resultType="String">
+        select userName from person where id = #{id}
+    </select>
+</mapper>
